@@ -1,17 +1,14 @@
 # Ecuación de transferencia radiativa
-Solución para la ecuación de Transferencia Radiativa
-
-Este trabajo intenta resolver la Ecuación de Transferencia Radiativa (ETR) con condiciones específicas e iniciales dadas.
+Solución para la ecuación de Transferencia Radiativa. Este trabajo intenta resolver la Ecuación de Transferencia Radiativa (ETR) con condiciones específicas e iniciales dadas.
 
 La ecuación de transferencia radiativa es una ecuación fundamental en la física que describe la propagación de la radiación a través de un medio, establece cómo cambia la intensidad de la radiación a medida que pasa por este y cómo se ve afectada por diferentes procesos de absorción, emisión y dispersión.
 
 ![ETR](https://github.com/LucreciaBeltz/ETR/blob/main/images/radiativa.png)
 ---
 
-## Contacto
+### Contacto
 Escuela Nacional de Estudios Superiores ((https://www.unam.mx/))
 María Lucrecia Beltz González ([LucreciaBeltz](https://github.com/LucreciaBeltz))
----
 
 ## Licencia
  Copyright © 2023 <lucreciabeltz@gmail.com>
@@ -21,7 +18,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
----
+
 # Introducción
 La ecuación de transferencia radiativa surge  para describir cómo la radiación se propaga y se modifica a medida que atraviesa un medio, tomando en cuenta procesos como la absorción (primera parte de la ecuación) y emisión (segunda parte). El cambio de intensidad específica en un rango, se considera la intensidad específica entrante por la opacidad, más la emisibilidad. Esta relación de procesos se expresa en la siguiente ecuación iterativa:
     $I(i+1)(\nu) = (I(i)(\nu) * exp(-tau(\nu))) + (S(\nu) * exp(1-tau(\nu)))$
@@ -67,7 +64,7 @@ las condiciones iniciales para este problema se definen de la siguiente manera:
 * Se almacenan los valores resultantes en listas
 * Se usan las listas para graficar 
 
- Herramientas de software
+# Herramientas de software
 ### Bibliotecas
 * [Python 3](https://www.python.org/)
 * Linux Ubuntu    64-bit
@@ -79,7 +76,7 @@ las condiciones iniciales para este problema se definen de la siguiente manera:
 * [Numpy version 1.21.5](https://numpy.org/) 
 * [Math](https://docs.python.org/3/library/math.html)
 * [Astropy](https://docs.astropy.org/en/stable/api/astropy.modeling.physical_models.BlackBody.html)
----
+
 
 # Implementación 
 
@@ -103,15 +100,14 @@ las condiciones iniciales para este problema se definen de la siguiente manera:
 ### Graficas
 * Gráfica de x vs intensidad
 * Gráfica de x vs Tau
+---
+
 
 # Pruebas
-
 ![ETR](https://github.com/LucreciaBeltz/ETR/blob/main/images/LinXvsI.png)
 ![ETR](https://github.com/LucreciaBeltz/ETR/blob/main/images/LinXvsT.png)
 
-
 # Resultados
-
 ![ETR](https://github.com/LucreciaBeltz/ETR/blob/main/images/LogXvsI.png)
 ![ETR](https://github.com/LucreciaBeltz/ETR/blob/main/images/LogXvsT.png)
 
@@ -120,9 +116,8 @@ las condiciones iniciales para este problema se definen de la siguiente manera:
 2. ejecutar el archivo *radiativa.py*
 ---
 
-# Conclusiones
+## Conclusiones
 La intensidad específica depende de las características del medio con el que se impacta, pueden ser tan diversos, y por ello se requiere alta precisión al realizar simulaciones que impliquen la radiación.
----
 
 ## Bibliografía
 (https://ui.adsabs.harvard.edu/abs/1985ARA%26A..23..169D/abstract)
@@ -130,4 +125,4 @@ La intensidad específica depende de las características del medio con el que s
 (https://docs.astropy.org/en/stable/api/astropy.modeling.physical_models.BlackBody.html)
 (https://webs.um.es/bussons/TransfRadiativa.pdf)
 https://www.scielo.org.mx/pdf/rmfe/v54n1/v54n1a6.pdf
----
+
