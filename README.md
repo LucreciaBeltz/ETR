@@ -6,8 +6,9 @@ La ecuación de transferencia radiativa es una ecuación fundamental en la físi
 ![ETR](https://github.com/LucreciaBeltz/ETR/blob/main/images/radiativa.png)
 ---
 
-### Contacto
+## Contacto
 Escuela Nacional de Estudios Superiores ((https://www.unam.mx/))
+
 María Lucrecia Beltz González ([LucreciaBeltz](https://github.com/LucreciaBeltz))
 
 ## Licencia
@@ -82,16 +83,20 @@ las condiciones iniciales para este problema se definen de la siguiente manera:
 
 ### Funciones
 * S: Define la ecuación de Planck mediante un evaluador de python *Blackbody*, que pertenece a la biblioteca Astropy.
+
     Input: T, nu
     Output: S(nu*u.Hz)
  
 * tau:  Define la profundidad óptica
+
     Input: delta, nu, T, ne
     Output: tau
 
 * k: Define la opacidad de la capa con la Ecuación 21, Dulk(1985)
+
     Input: ne, T, nu
     Output:  k
+    
 ### Listas
 * X: Guarda valores de x iterativamente
 * Y: Guarda los valores de la intensidad iterativamente
@@ -120,9 +125,9 @@ las condiciones iniciales para este problema se definen de la siguiente manera:
 La intensidad específica depende de las características del medio con el que se impacta, pueden ser tan diversos, y por ello se requiere alta precisión al realizar simulaciones que impliquen la radiación.
 
 ## Bibliografía
-(https://ui.adsabs.harvard.edu/abs/1985ARA%26A..23..169D/abstract)
-(https://es.wikipedia.org/wiki/Ley_de_Planck)
-(https://docs.astropy.org/en/stable/api/astropy.modeling.physical_models.BlackBody.html)
-(https://webs.um.es/bussons/TransfRadiativa.pdf)
+https://ui.adsabs.harvard.edu/abs/1985ARA%26A..23..169D/abstract
+https://es.wikipedia.org/wiki/Ley_de_Planck
+https://docs.astropy.org/en/stable/api/astropy.modeling.physical_models.BlackBody.html
+https://webs.um.es/bussons/TransfRadiativa.pdf
 https://www.scielo.org.mx/pdf/rmfe/v54n1/v54n1a6.pdf
 
